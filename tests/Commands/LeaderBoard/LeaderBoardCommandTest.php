@@ -14,13 +14,13 @@ class LeaderBoardCommandTest extends TestCase
 
     protected function setUp()
     {
-        $commandCreate = require __DIR__ . '/../../commands/LeaderBoard/LeaderBoard.command.php';
+        $commandCreate = require __DIR__ . '/../../../commands/LeaderBoard/leaderboard.command.php';
         $this->client = $this->createMock('\CharlotteDunois\Livia\LiviaClient');
         $this->command = $commandCreate($this->client);
 
         $this->leaderboard_text = <<< EOT
 @Heisenberg (Александр)
-:star::star::star::star::star: 
+:star::star::star::star::star:
 :medal::medal:
 
 @ucorp  (Аслан)
@@ -29,7 +29,7 @@ class LeaderBoardCommandTest extends TestCase
 
 @IvanK (Иван)
 :star::star::star:
-:medal: 
+:medal:
 
 @simbiosse (Руслан)
 :star: :star: :star:
@@ -40,16 +40,16 @@ class LeaderBoardCommandTest extends TestCase
 @LoveFist (Михаил)
 :star: :star: :star: :star:
 
- @DanielWeiser 
+ @DanielWeiser
 :star: :star:
 
-@MikesoWeb 
+@MikesoWeb
 :star: :star:
 
 @iaptekar (Иван)
 :star: :star:
 
-@resident01 
+@resident01
 :star::star:
 
 @Andrey Kustov  (Андрей)
